@@ -1,0 +1,6 @@
+def count_repeated_characters(s):
+    counts = {}
+    for char in s:
+        if s.count(char) > 1:
+            counts[char] = s.count(char)
+    return counts
