@@ -1,0 +1,2 @@
+def char_index(s, char):
+    return [i for i, c in enumerate(s) if c == char]
