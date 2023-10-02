@@ -1,0 +1,7 @@
+def replace_not_poor(s):
+    index_not = s.find('not')
+    index_poor = s.find('poor')
+    if index_not != -1 and index_poor != -1 and index_not < index_poor:
+        return s[:index_not] + 'good' + s[index_poor+4:]
+    else:
+        return s
